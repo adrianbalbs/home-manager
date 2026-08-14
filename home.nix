@@ -5,6 +5,7 @@
     ./modules/tmux.nix
     ./modules/nvim.nix
     ./modules/git.nix
+    ./modules/fish.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
