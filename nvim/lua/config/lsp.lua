@@ -89,8 +89,11 @@ vim.lsp.config("nixd", {
                 -- nixos = {
                 --     expr = '(builtins.getFlake (toString ./.)).nixosConfigurations.<hostname>.options',
                 -- },
-                home_manager = {
-                    expr = '(builtins.getFlake (toString ./.)).homeConfigurations."adrianb".options',
+                home_manager_linux = {
+                    expr = '(builtins.getFlake (toString ./.)).homeConfigurations."adrianb@linux".options',
+                },
+                home_manager_mac = {
+                    expr = '(builtins.getFlake (toString ./.)).homeConfigurations."adrian@mac".options',
                 },
             },
         },
