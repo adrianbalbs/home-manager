@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   programs.fish = {
     enable = true;
@@ -27,9 +27,9 @@
   };
 
   home.sessionPath = [
-    "$HOME/.local/bin"
-    "$HOME/.local/share/pnpm/bin"
+    "${config.home.homeDirectory}/.local/bin"
+    "${config.home.homeDirectory}/.local/share/pnpm/bin"
   ];
 
-  home.sessionVariables.PNPM_HOME = "$HOME/.local/share/pnpm";
+  home.sessionVariables.PNPM_HOME = "${config.home.homeDirectory}/.local/share/pnpm";
 }
