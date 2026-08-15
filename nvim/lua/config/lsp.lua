@@ -73,6 +73,30 @@ vim.lsp.config("vtsls", {
     }
 })
 
+vim.lsp.config("nixd", {
+    cmd = { "nixd" },
+    filetypes = { "nix" },
+    root_markers = { "flake.nix", ".git" },
+    settings = {
+        nixd = {
+            nixpkgs = {
+                expr = "import <nixpkgs> { }",
+            },
+            formatting = {
+                command = { "nixfmt" },
+            },
+            options = {
+                -- nixos = {
+                --     expr = '(builtins.getFlake (toString ./.)).nixosConfigurations.<hostname>.options',
+                -- },
+                home_manager = {
+                    expr = '(builtins.getFlake (toString ./.)).homeConfigurations."adrianb".options',
+                },
+            },
+        },
+    },
+})
+
 vim.diagnostic.config { virtual_lines = false, virtual_text = true }
 
 vim.lsp.enable {
@@ -98,5 +122,5 @@ vim.lsp.enable {
     "ansiblels",
     "biome",
     "css_variables",
-    "nil_ls"
+    "nixd"
 }
