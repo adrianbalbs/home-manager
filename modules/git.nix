@@ -14,5 +14,15 @@
         editor = "vim";
       };
     };
+    includes = [
+      {
+        condition = "gitdir:~/langdale/";
+        contents = {
+          user = {
+            email = "adrianb@langdale.com.au";
+          };
+        };
+      }
+    ];
   };
 }
