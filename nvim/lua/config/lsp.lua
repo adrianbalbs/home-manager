@@ -27,7 +27,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
-
 vim.lsp.config("*", {
     capabilities = {
         textDocument = {
@@ -59,18 +58,18 @@ vim.lsp.config("vtsls", {
         typescript = {
             tsdk = "node_modules/typescript/lib",
             preferences = {
-                importModuleSpecifier = "non-relative"
-            }
+                importModuleSpecifier = "non-relative",
+            },
         },
         javascript = {
             preferences = {
-                importModuleSpecifier = "non-relative"
-            }
+                importModuleSpecifier = "non-relative",
+            },
         },
         vtsls = {
-            autoUseWorkspaceTsdk = true
-        }
-    }
+            autoUseWorkspaceTsdk = true,
+        },
+    },
 })
 
 vim.lsp.config("nixd", {
@@ -125,5 +124,5 @@ vim.lsp.enable {
     "ansiblels",
     "biome",
     "css_variables",
-    "nixd"
+    "nixd",
 }
