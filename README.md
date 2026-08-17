@@ -1,7 +1,7 @@
 # Home Manager Configuration
 
 This repo is for my home manager configuration, which manages my development
-environment across Linux and eventually MacOS.
+environment across Linux and MacOS.
 
 ## Setup
 1. Install Nix, I personally use the [Determinate Nix installer](https://docs.determinate.systems/determinate-nix/).
