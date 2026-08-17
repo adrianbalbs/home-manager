@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ../modules/tmux.nix
-    ../modules/nvim.nix
-    ../modules/git.nix
-    ../modules/fish.nix
+    ../programs/tmux.nix
+    ../programs/nvim.nix
+    ../programs/git.nix
+    ../programs/fish.nix
   ];
 
   # home.username and home.homeDirectory are set per-platform -- the account

@@ -3,7 +3,7 @@
 {
   imports = [
     ./common.nix
-    ../modules/fish-darwin.nix
+    ../programs/fish-darwin.nix
   ];
 
   home.username = "adrian";

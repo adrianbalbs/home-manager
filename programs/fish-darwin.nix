@@ -1,8 +1,6 @@
 { ... }:
 {
-  # Merged with modules/fish.nix -- home.sessionPath is a list and
-  # programs.fish.interactiveShellInit is `lines`, so both concatenate rather
-  # than conflict.
+  # Nix will concatenate these attributes to the default fish config, since they are lists
   home.sessionPath = [ "/opt/homebrew/bin" ];
 
   programs.fish.interactiveShellInit = ''
