@@ -18,7 +18,11 @@
     enable = true;
     nix-direnv.enable = true;
   };
-  programs.starship.enable = true;
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = true;
+    enableTransience = true;
+  };
   programs.mise.enable = true;
 
   programs.zoxide = {
