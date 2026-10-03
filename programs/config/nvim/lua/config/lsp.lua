@@ -125,4 +125,5 @@ vim.lsp.enable {
     "biome",
     "css_variables",
     "nixd",
+    "zls"
 }
