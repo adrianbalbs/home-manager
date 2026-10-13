@@ -20,6 +20,9 @@
         contents = {
           user = {
             email = "adrianb@langdale.com.au";
+            init = {
+              defaultBranch = "master";
+            };
           };
         };
       }
