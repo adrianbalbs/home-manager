@@ -72,6 +72,14 @@ vim.lsp.config("vtsls", {
     },
 })
 
+-- vim.lsp.config('ty', {
+--     init_options = {
+--         experimental = {
+--             useUv = 'on',
+--         },
+--     },
+-- })
+
 vim.lsp.config("nixd", {
     cmd = { "nixd" },
     filetypes = { "nix" },
@@ -110,7 +118,6 @@ vim.lsp.enable {
     "eslint",
     "gopls",
     "cmake",
-    "ty",
     "jsonls",
     "bashls",
     "ruff",
@@ -125,5 +132,6 @@ vim.lsp.enable {
     "biome",
     "css_variables",
     "nixd",
-    "zls"
+    "zls",
+    "pyrefly"
 }
